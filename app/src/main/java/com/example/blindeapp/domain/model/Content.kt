@@ -11,5 +11,5 @@ data class Content(
     val createdDate: Date = Date(),
     val likeCount: Int = 0,
     val commentCount: Int = 0,
-    val viewCount: Int? = null
+    val viewCount: Int = 0,
 ) : Serializable

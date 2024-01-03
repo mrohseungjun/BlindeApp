@@ -11,15 +11,15 @@ import retrofit2.http.Path
 
 interface ContentService {
 
-    @GET("List")
-    suspend fun getList() : ListResponse
+    @GET("list")
+    suspend fun getList(): ListResponse
 
     @POST("save")
-    suspend fun saveItem(@Body contentDto: ContentDto) : ContentResponse
+    suspend fun saveItem(@Body contentDto: ContentDto): ContentResponse
 
     @POST("update")
-    suspend fun updateItem(@Body contentDto: ContentDto) : ContentResponse
+    suspend fun updateItem(@Body contentDto: ContentDto): ContentResponse
 
     @DELETE("{id}")
-    suspend fun deleteItem(@Path("id") id :Int) : ContentResponse
+    suspend fun deleteItem(@Path("id") id: Int): ContentResponse
 }
