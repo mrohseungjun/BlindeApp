@@ -8,7 +8,7 @@ import com.example.blindeapp.data.source.local.dao.ContentDao
 
 @Database(entities = [ContentEntity::class], version = 1)
 @TypeConverters(DateConverter::class)
-abstract class AppDatabase : RoomDatabase(){
+abstract class AppDatabase : RoomDatabase() {
 
     abstract fun contentDao() : ContentDao
 }
